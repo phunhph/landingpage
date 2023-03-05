@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: brown;
+  height: auto;
+  width: 100%;
+}
+/* Css header */
+header {
+  background-image: url(img/bg.jpg);
+  background-size: 100% 100%;
+  height: auto;
+  width: 100%;
+}
+.logo {
+  padding: 10px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 15% 50% 35%;
+}
+
+#logo {
+  width: 60%;
+  height: 70%;
+}
+/* css menu */
+nav {
+  padding-top: 4vh;
+}
+.logo ul li {
+  display: inline-block;
+  margin-right: 10%;
+}
+.logo ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+.logo ul li a:hover {
+  color: aqua;
+  text-shadow: 0 0 20px rgb(24, 240, 240);
+}
+/* search */
+form {
+  padding-top: 3vh;
+}
+#search {
+  width: 20vw;
+  height: 4vh;
+  outline: none;
+  border-radius: 20px;
+  border: #fff;
+  padding-left: 1vw;
+}
+#submit {
+  height: 4vh;
+  width: 5vw;
+  margin-left: 1vw;
+  border-radius: 20px;
+  outline: none;
+  background-color: #760a0a;
+  color: #fff;
+  border: #6a1212;
+}
+#submit:hover {
+  box-shadow: inset 0 0 30px #270505;
+}
+/* text banner */
+.text {
+  font-size: 65px;
+  font-family: Fredoka One;
+  text-align: center;
+  margin-top: 100px;
+  color: #fff;
+}
+button {
+  margin-top: 20vh;
+  background-color: #f53b00e0;
+  margin-left: 45%;
+  outline: none;
+  height: 3vw;
+  width: 10vw;
+  border-radius: 30px;
+  border: 1px solid #f53b00e0;
+  color: #fff;
+  font-size: 18px;
+}
+/* img ảnh 1 */
+.img {
+  width: 90%;
+  margin-left: 6.2vw;
+  margin-top: 30vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-bottom: 10vh;
+}
+.img img {
+  width: 90%;
+  /* mai nghiên cứu */
+  filter: grayscale();
+}
+.img img:hover {
+  width: 90%;
+  filter: none;
+}
+p {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+}
+.textmain1 {
+  font-size: 24px;
+  background-color: #000;
+  background-image: linear-gradient(rgb(54, 54, 54), black);
+}
+.textmain1 p {
+  width: 98%;
+  font-size: 24px;
+  margin-left: 10px;
+  background-image: linear-gradient(rgb(54, 54, 54), black);
+}
+/* Form */
+.form {
+  background-color: black;
+  height: auto;
+}
+.conten-main {
+  width: 98%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 55px;
+}
+.imgForm {
+  position: relative;
+}
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img2 {
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+  filter: blur();
+}
+.img3 {
+  position: absolute;
+  left: 0;
+  bottom: -400px;
+}
+
+/* form */
+.conten-main {
+  background-color: rgb(18, 244, 116);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.saleForm {
+  width: 100%;
+}
+.saleForm h1 {
+  margin-top: 47px;
+  margin-left: 1px;
+  text-align: center;
+  font-size: 55px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.saleForm h1 samp {
+  color: red;
+  text-decoration: underline;
+}
+.saleForm .p1 {
+  margin: 25px 0;
+}
+.saleForm .p1 samp {
+  color: red;
+}
+.sale {
+  display: flex;
+  justify-content: center;
+  width: 429px;
+  margin-left: 10px;
+  border: 10px solid orange;
+  margin: auto;
+  border-radius: 15px;
+}
+.sale p {
+  margin: 15px;
+}
+.sale_p1 {
+  text-decoration: line-through;
+}
+.sale_div_p2 {
+  background-color: orange;
+}
+.sale_footer {
+  margin: 20px 0;
+  font-size: 25px;
+}
+
+/* form */
+
+.conten-main form {
+  margin: 40px;
+  width: 80%;
+  text-align: center;
+  line-height: 75px;
+  background: orange;
+  border-radius: 20px;
+}
+input {
+  width: 90%;
+  height: 45px;
+  font-size: 20px;
+  background-color: azure;
+  border: azure;
+  padding-left: 10px;
+}
+textarea {
+  width: 90%;
+  background-color: azure;
+}
+.conten-main input[type="submit"] {
+  width: 130px;
+
+  background-color: red;
+  border: red;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+}
+@media only screen and (max-width: 768px) {
+  /* căn logo */
+  .logo {
+    padding: 10px 20px 0px 20px;
+    display: flex;
+  }
+  .iteam2 {
+    order: 3;
+    width: 20%;
+  }
+  .iteam1 {
+    width: 30%;
+  }
+  #logo {
+    width: 50%;
+    height: 50%;
+  }
+  /* chỉnh menu */
+  nav {
+    margin-top: 5px;
+    margin-left: 8px;
+    color: #fff;
+    font-size: 10px;
+    font-family: Montserrat;
+    padding: 0;
+    text-align: center;
+    height: 30px;
+  }
+  nav:hover > ul {
+    display: block;
+  }
+  nav ul {
+    margin-left: 5px;
+    text-align: center;
+    display: none;
+  }
+  .logo ul li {
+    display: inline-block;
+  }
+  .logo ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-family: Montserrat;
+  }
+  .logo ul li a:hover {
+    color: aqua;
+    text-shadow: 0 0 20px rgb(24, 240, 240);
+  }
+  /* search */
+  .search {
+    padding: 0;
+  }
+  #search {
+    width: 70%;
+    height: auto;
+    outline: none;
+    border-radius: 5px;
+    border: #fff;
+  }
+  #submit {
+    height: auto;
+    width: 25%;
+    border-radius: 10px;
+    outline: none;
+    background-color: #760a0a;
+    color: #fff;
+    border: #6a1212;
+  }
+  #submit:hover {
+    outline: none;
+    box-shadow: inset 0 0 30px #270505;
+  }
+  /* text banner */
+  .text {
+    font-size: 35px;
+    font-family: Fredoka One;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+  }
+  button {
+    margin-top: 30px;
+    background-color: #f53b00e0;
+    margin-left: 39%;
+    outline: none;
+    height: auto;
+    width: 100px;
+    border-radius: 30px;
+    border: 1px solid #f53b00e0;
+    color: #fff;
+    font-size: 18px;
+  }
+  /* img ảnh 1 */
+  .img {
+    margin-left: 20px;
+    width: 90%;
+    height: 150px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .img img {
+    width: 85%;
+    /* mai nghiên cứu */
+    filter: grayscale();
+  }
+  .img img:hover {
+    width: 100%;
+    filter: none;
+    padding-right: 10px;
+  }
+  p {
+    width: 80%;
+    color: #fff;
+    font-family: Montserrat;
+    display: flex;
+    margin-right: 0;
+    justify-content: space-evenly;
+    font-size: 10px;
+  }
+  .textmain1 {
+    width: 100%;
+    background-color: #000;
+    background-image: linear-gradient(rgb(54, 54, 54), black);
+  }
+  .textmain1 p {
+    width: 98%;
+    font-size: 10px;
+    background-image: linear-gradient(rgb(54, 54, 54), black);
+    margin: 0;
+    padding-left: 5px;
+  }
+}
