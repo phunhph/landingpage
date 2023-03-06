@@ -48,7 +48,7 @@ form {
   padding-top: 3vh;
 }
 #search {
-  width: 20vw;
+  width: 70%;
   height: 4vh;
   outline: none;
   border-radius: 20px;
@@ -57,7 +57,7 @@ form {
 }
 #submit {
   height: 4vh;
-  width: 5vw;
+  width: 20%;
   margin-left: 1vw;
   border-radius: 20px;
   outline: none;
@@ -156,7 +156,9 @@ p {
 
 /* form */
 .conten-main {
-  background-color: rgb(18, 244, 116);
+  background-image: url(img/Rectangle\ 24.png);
+  background-size: 100% 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -196,6 +198,7 @@ p {
   text-decoration: line-through;
 }
 .sale_div_p2 {
+  width: 100%;
   background-color: orange;
 }
 .sale_footer {
@@ -212,6 +215,7 @@ p {
   line-height: 75px;
   background: orange;
   border-radius: 20px;
+  margin-left: 80px;
 }
 input {
   width: 90%;
@@ -224,6 +228,8 @@ input {
 textarea {
   width: 90%;
   background-color: azure;
+  padding-left: 10px;
+  font-size: 20px;
 }
 .conten-main input[type="submit"] {
   width: 130px;
@@ -233,7 +239,9 @@ textarea {
   color: white;
   border-radius: 10px;
   outline: none;
+  text-align: center;
 }
+
 @media only screen and (max-width: 768px) {
   /* căn logo */
   .logo {
@@ -296,7 +304,10 @@ textarea {
   }
   #submit {
     height: auto;
-    width: 25%;
+    width: 26%;
+    margin: 0;
+    padding: 0;
+    font-size: small;
     border-radius: 10px;
     outline: none;
     background-color: #760a0a;
@@ -366,5 +377,93 @@ textarea {
     background-image: linear-gradient(rgb(54, 54, 54), black);
     margin: 0;
     padding-left: 5px;
+  }
+  /* form */
+  .conten-main {
+    background-image: url(img/Rectangle\ 24.png);
+    background-size: 100% 100%;
+    width: 100%;
+    display: block;
+  }
+  .saleForm {
+    width: 100%;
+  }
+  .saleForm h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: 0;
+  }
+  .saleForm h1 samp {
+    color: red;
+    text-decoration: underline;
+  }
+  .saleForm .p1 {
+    margin: 20px 0;
+    width: 100%;
+    display: block;
+  }
+  .saleForm .p1 samp {
+    color: red;
+    padding-top: 10px;
+  }
+  .sale {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-left: 10px;
+    border: 10px solid orange;
+    margin: auto;
+    border-radius: 15px;
+  }
+  .sale p {
+    margin: 15px;
+    font-size: 15px;
+  }
+  .sale_p1 {
+    text-decoration: line-through;
+  }
+  .sale_div_p2 {
+    width: 100%;
+    background-color: orange;
+  }
+  .sale_footer {
+    margin: 20px 0;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /* form */
+
+  .conten-main form {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    line-height: 75px;
+    background: orange;
+    border-radius: 20px;
+  }
+  input {
+    width: 90%;
+    height: 45px;
+    font-size: 15px;
+    background-color: azure;
+    border: azure;
+    padding-left: 10px;
+  }
+  textarea {
+    width: 90%;
+    background-color: azure;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  .conten-main input[type="submit"] {
+    width: 130px;
+
+    background-color: red;
+    border: red;
+    color: white;
+    border-radius: 10px;
+    outline: none;
   }
 }
